@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snacky</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-snacky.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="front">
+        <div class="logo">
+          <div class="brand">
+            <img src="img/logo-snacky.png" alt="snacky logo" />
+            <h1>SNACKY</h1>
+          </div>
+        </div>
+        <div class="instruction">
+          <h2>Instruction</h2>
+          <p>1. Input your name and click Start</p>
+          <p>2. Control with Arrow Keys : Left, Up, Right, Down</p>
+          <p>3. Enjoy your Game</p>
+          <div class="form">
+            <input type="text" id="input" placeholder="Input your name" />
+            <button id="start" disabled>Start</button>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <header>
+          <h2>Score: <span id="score">0</span></h2>
+          <div class="brand">
+            <img src="img/logo-snacky.png" alt="snacky logo" />
+            <h1>SNACKY</h1>
+          </div>
+          <h2>Time: <span id="minute">00</span>:<span id="second">00</span></h2>
+        </header>
+        <canvas id="map" width="960" height="600"></canvas>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="end">
+        <h2>Game Over</h2>
+        <p>Score: <span id="end-score"></span></p>
+        <p>Highscore: <span id="end-highscore"></span></p>
+        <button id="restart" onclick="window.location.reload()">Restart</button>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
